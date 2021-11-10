@@ -1,0 +1,388 @@
+/* GENERALES */
+@font-face {
+    font-family: "Poppins";
+    src: url('/font/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: "Heebo";
+    src: url('/font/Heebo-Regular.ttf');
+}
+
+html{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,p {
+    margin: 0;
+}
+
+.contenedor {
+    width: 90%;
+}
+.margen-left {
+    margin-left: 15% 
+}
+.margen-right {
+    margin-right: 15% 
+}
+.centrar{
+    margin: 0 auto;
+}
+p{
+    font-weight: 400;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* TODO *******************/
+
+
+
+
+/* NAME y TITULO ************************/
+
+.name-menu-inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 40px;
+}
+
+.menu-top{
+    display: none;
+}
+
+/* CABECERA ****************************/
+
+.cont-h1{
+
+    /* width: 85%;
+    text-align: left;
+    margin: 0 0 15px 25px; */
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.p-1 {
+    color: blue;
+}
+
+.cabecera img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.h-2, .p-2{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.p-3{
+    font-size: 8px;
+    color: gray;
+    text-align: left;
+}
+
+.titulo-input{
+    max-width: 300px;
+}
+.cabecera-input  div{
+    text-align: left;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    margin-bottom: 60px; 
+}
+.cabecera-input input {
+    height: 26px;
+    width: 150px;
+    background-color: #F2F2F2;
+    border: none;
+    outline: none;
+}
+.cabecera-input button {
+    background-color:  #2D9CDB;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    height: 39px;
+    width: 61px;
+}
+.cabecera-input .p-3{
+    padding: 10px 10px;
+}
+.p-final {
+    text-align: center;
+}
+
+/* SERVICIOS ************************/
+.servicios{
+    max-width: 1200px;
+
+}
+.servicios-titulo {
+    text-align: left;
+}
+
+.servicio{
+    margin-top: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+.servicio i{
+    color: #2D9CDB;
+    font-size: 67px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.servicio h2{
+    margin-bottom: 20px;
+}
+.servicio p{
+    line-height: 24px;
+    font-size: 16px;
+    text-align: left;
+}
+.servicio button {
+
+    background-color:  #E0E0E0;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    /* height: 39px; */
+    /* width: 61px; */
+    font-size: 16px;
+    padding: 16px;
+    margin: 20px;
+}
+
+/* FOTOS ******************************************/
+
+.fotos{
+    margin-bottom: 70px;
+    text-align: left;
+    max-width: 1200px;
+}
+
+.fotos-titulo {
+    margin-top: 145px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    font-size: 24px;
+}
+.fotos img {
+    margin-top: 50px;
+    border-radius: 16px;
+    width: 100%;
+}
+.fotos a {
+    display: block;
+    margin:25px 0;
+    color: #2D9CDB;
+}
+
+/* TEAM *******************************************/
+
+.team{
+    text-align: left;
+    max-width: 1200px;
+}
+.team h1 {
+    font-size: 36px;
+}
+.team .p-1{
+    color:  #EB5757;
+    font-size: 18px;
+    padding: 15px 0;
+}
+.team .p-2{
+ margin: 15px 0;   
+ font-size: 16px;
+}
+
+
+.todas-fotos{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+.fotos-chicos {
+    width: 50%;
+}
+.fotos-chicos img{
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+}
+.foto-chica {
+    width: 50%;
+    height: 50%;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+/* COMENTARIOS ********************************/
+
+.comentarios{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.comentarios h3 {
+    line-height: 36px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+.comentarios img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    float: left;
+}
+.contenedor-carlos {
+    display: flex;
+    justify-content: flex-start;
+}
+.contenedor-carlos div{
+    padding-left: 70px;
+}
+
+/* FOOTER ****************************************/
+footer{
+    background-color: black;
+    color: white;
+}
+.contenedor-footer {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menu {
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+.menu nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.menu a {
+    color: white;
+}
+
+.redes {
+    margin-bottom: 40px;
+    
+}
+
+/* MEDIA QUERYS ****************************************************************/
+@media (min-width: 1200px) {
+
+    /* NAME Y TITULO ********************************/
+    #icono{
+        display: none    
+    }
+    .menu-top {
+        display: block;
+    }
+    .menu-top a {
+        margin-left: 20px;
+        border-bottom: 2px solid white;
+        transition: border-bottom 0.4s ease-in;
+        padding: 1px 15px;
+    }
+    .menu-top a:hover{
+        border-bottom: 2px solid black;
+    }
+    
+    /* CABECERA **********************************/
+    .cabecera-input, .titulo-input {
+        width: 300px;
+    }
+
+    /* SERVICIOS **********************************/
+    .cont-services {
+        display: flex;
+        justify-content: space-between;
+    }
+    .servicios-titulo{
+        margin-left: 10%;
+    }
+    .servicio{
+        margin: 1%;
+    }
+
+    /* FOTOS ****************************************/
+    .contenedor-foto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .foto{
+        margin: 10px;
+    }
+    .f1, .f3{
+        padding-top: 100px;
+    }
+    .fotos a{
+        text-align: end;
+    }
+
+    /* TEAM ********************************************/
+    .team{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fotos-chicos,.foto-chica{
+        max-width: 300px
+    }
+
+    /* COMENTARIOS *************************************/
+    .comentarios h3{
+        width: 70%;
+    }
+    /* FOOTER *******************************************/
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu , .cont-redes, .cabecera-input {
+        margin-top: 30px;
+    }
+    .menu{
+        padding-top: 0;
+    }
+
+
+}
